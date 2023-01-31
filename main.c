@@ -10,16 +10,40 @@
 // int 4 bytes
 // long int 8 bytes
 
+//Scanf + printf med %s kl 12:40 fram till 13:00. 
+//Då blir det studeranderepresentant och sen är det HANDLEDNING, 
+// COOLA VS CODE!
 void main(){
+    int nrOfGuesses = 0;
+    int secretNumber = 40; // TODO Slumpa fram
+    char namn[] = "Stefan";
+    //tills vi gissat rätt
+    int inputNumber; 
+    //nrOfGuesses = nrOfGuesses + 1;
+    nrOfGuesses++;
+    //nrOfGuesses+=1;
 
-    unsigned char ch=65;
-    unsigned char ch2='A';
-    printf("Hej %c %c %d %d\n", ch, ch2, ch, ch2);
 
-    float aa = 123.23;
-    double e  = 112.3343;
 
-    unsigned char age = 14;
+    
+
+
+    printf("Gissning %d:", nrOfGuesses);
+    scanf(" %d", &inputNumber);
+    if(inputNumber == secretNumber){
+        printf("Hej %s du gissade rätt på %d försök\n",namn,  nrOfGuesses);
+    }
+
+
+
+    // unsigned char ch=65;
+    // unsigned char ch2='A';
+    // printf("Hej %c %c %d %d\n", ch, ch2, ch, ch2);
+
+    // float aa = 123.23;
+    // double e  = 112.3343;
+
+    // unsigned char age = 14;
 
     
 
